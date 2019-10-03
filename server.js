@@ -60,8 +60,8 @@ var server=http.createServer(function(req,res){
     res.end();
 
 });
-
-server.listen(3002,function()
+var port= process.env.port||3000;
+server.listen(port,function()
 {
     console.log( "Server is listening at port 3002");
 });
